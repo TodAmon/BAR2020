@@ -1,0 +1,11 @@
+#a is a label for 'sym0==65' (A),
+#b is a label for 'sym1==85' (U),
+#c is a label for 'sym2==84' (T),
+#d is a label for 'sym3==72' (H),
+#e is a label for 'sym4==84' (T),
+#f is a label for 'sym5==79' (O),
+#g is a label for 'sym6==68' (D),
+#h is a label for 'sym7==0'
+INORDER = a b c d e f g h;
+OUTORDER = f1;
+f1 = (a b c d e') + (a b c d e f') + (a b c d e f g') + (a b c d e f g h');

@@ -1,0 +1,24 @@
+These files enable replication of results reported at the 2020 BAR Workshop
+For the paper "Creating Human Readable Path Constraints from Symbolic Execution"
+
+Be sure to install angr and the logic synthesis tool SIS
+
+Section II-A, III-B (results for II-A)
+   cat sub1or2.c
+   objdump -M intel -d sub1or2
+   python show_constraint_for_sub1or2.py
+
+Section II-B, III-B (results for II-B)
+   cat readtowrite.c
+   python show_constraint_for_readtowrite.py
+
+Section II-C, III-C:
+  cat authentication.c
+  cat authentication.eqn
+  python show_constraint_for_authentication.py
+  ~/sis1.3/bin/sis -c \
+    "full_simplify; decomp -g; read_library authentication.genlib; map" \
+    -T eqn -t eqn authentication.eqn 
+
+Logic synthesis for simplification et.al.:
+  python misc_bv_to_int_stuff.py
