@@ -1,7 +1,10 @@
 These files enable replication of results reported at the 2020 BAR Workshop
 For the paper "Creating Human Readable Path Constraints from Symbolic Execution"
 
-Be sure to install angr and the logic synthesis tool SIS
+Be sure to install angr and the logic synthesis tool SIS.
+
+This code uses sis 1.3, downloaded via a link from:
+http://cs.columbia/edu/~cs6861/sis/sis/html
 
 Section II-A, III-B (results for II-A)
    cat sub1or2.c
