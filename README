@@ -25,3 +25,7 @@ Section II-C, III-C:
 
 Logic synthesis for simplification et.al.:
   python misc_bv_to_int_stuff.py
+  
+If you are interested in this work, you can send me email at:  amon.tod@gmail.com or ttamon@sandia.gov
+This work is ongoing and the files in this repository reflect the research state prior to the BAR
+conference.  There is a lot of new work, but it has not been publicly released yet.
